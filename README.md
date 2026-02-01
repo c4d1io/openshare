@@ -49,6 +49,14 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
+### Health check endpoint ✅
+
+A simple health endpoint is available at `/health/` and returns JSON with the service and database status. Example response when healthy:
+
+```json
+{"status": "Healthy", "database": "up"}
+```
+
 ### 5. Start Development Server
 
 ```bash
